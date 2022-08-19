@@ -1,5 +1,5 @@
 .mobile-container {
-  max-width: 390px;
+  max-width: 420px;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -41,6 +41,10 @@
 }
 
 .cta {
+  position: relative;
+}
+
+.cta__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +52,48 @@
   margin-bottom: 20px;
   min-height: 64px;
   overflow: hidden;
+  transition: 0.7s;
+}
+
+.cta--expandable.cta--expand .cta__container {
+  height: 87px;
+  margin-bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cta.cta--expandable.cta--expand {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 130px;
+  background-color: white;
+  z-index: 5;
+}
+
+.cta.cta--expandable.cta--expand::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  transition-delay: 0.7s;
+}
+
+.cta--expandable.cta--expand .cta__content p,
+.cta--expandable.cta--expand .cta__action span {
+  opacity: 0;
+}
+
+.cta--expandable.cta--expand .cta__content h3,
+.cta--expandable.cta--expand .cta__action img {
+  opacity: 1;
 }
 
 .cta--green {
@@ -55,6 +101,7 @@
 
 .cta--green .cta__content {
   background-color: rgb(0, 194, 103, 0.1);
+  position: relative;
 }
 
 .cta--green .cta__action {
@@ -84,7 +131,26 @@
   padding: 12px 0 12px 15px;
   width: 75%;
   min-height: inherit;
+  height: 100%;
   font-weight: 300;
+  transition: 0.7s;
+}
+
+.cta--expandable.cta--expand .cta__content {
+  padding: 30px;
+}
+
+.cta--expandable .cta__content p,
+.cta--expandable .cta__content h3 {
+  position: absolute;
+}
+
+.cta--expandable .cta__content h3 {
+  opacity: 0;
+}
+
+.cta__content h3 {
+  font-size: 20px;
 }
 
 .cta__action {
@@ -95,13 +161,91 @@
   font-size: 14px;
   width: 35%;
   min-height: inherit;
+  height: 100%;
   border: none;
   font-weight: 600;
+  transition: 0.7s;
+}
+
+.cta--expandable .cta__action span,
+.cta--expandable .cta__action img {
+  position: absolute;
+}
+
+.cta--expandable .cta__action img {
+  opacity: 0;
 }
 
 .cta__action del {
   font-weight: 400;
   margin-bottom: 3px;
+}
+
+.cta--expandable.cta--expand .cta__list {
+  scale: 1;
+  overflow: auto;
+  padding: 30px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cta__list {
+  background-color: white;
+  height: 0;
+  width: 0;
+  scale: 0;
+  overflow: hidden;
+  transform-origin: bottom;
+  transition: scale 0.7s, height 0s;
+}
+
+.cta__list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.cta__list__item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.cta__list__item img.img--open {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(5);
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transition: transform 0.7s;
+  z-index: 2;
+}
+
+.cta__list.img--open > span {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.892);
+  z-index: 1;
+  transition-delay: 0.7s;
+}
+
+.cta__list__item__content h4 {
+  font-size: 18px;
+  font-family: "Cerebri Sans";
+  font-weight: 300;
+  color: #303030;
+}
+
+.cta__list__item__content span {
+  font-size: 15px;
+  font-weight: 300;
+  color: #6c6c6c;
 }
 
 .cta--double {
@@ -199,11 +343,11 @@
 }
 
 .event-group__event-details--purple {
-  background-color: #EAE2FE;
+  background-color: #eae2fe;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .mobile-container {
     background-color: var(--color-background-dark);
   }
-}
+} */

@@ -30,24 +30,93 @@
         </section>
         <section class="cta-list">
           <div class="cta cta--green">
-            <div class="cta__content">
-              <p>Your account is inactive</p>
-              <p><b>15% off </b>offer until June23.</p>
+            <div class="cta__container">
+              <div class="cta__content">
+                <p>Your account is inactive</p>
+                <p><b>15% off </b>offer until June23.</p>
+              </div>
+              <button class="cta__action">
+                <span>
+                  <del>N75,000</del>
+                </span>
+                <span>Pay N62,800</span>
+              </button>
             </div>
-            <button class="cta__action">
-              <span>
-                <del>N75,000</del>
-              </span>
-              <span>Pay N62,800</span>
-            </button>
           </div>
-          <div class="cta cta--orange">
-            <div class="cta__content">
-              <p>View your meals for the week</p>
+          <div class="cta cta--orange cta--expandable" data-expand="meal">
+            <div class="cta__container">
+              <div class="cta__content">
+                <p>View your meals for the week</p>
+                <h3>Today's Meal</h3>
+              </div>
+              <button data-expand="meal" class="cta__action">
+                <span>Check 'em</span>
+                <img src="./assets/images/close.png" alt="close" />
+              </button>
             </div>
-            <button class="cta__action">
-              <span>Check 'em</span>
-            </button>
+            <div class="cta__list">
+              <span></span>
+              <div class="cta__list__item">
+                <img
+                  src="./assets/images/foods/Akara & Pap.png"
+                  alt="akara and pap"
+                />
+                <div class="cta__list__item__content">
+                  <h4>Akara & Pap</h4>
+                  <span>Carbohydrate</span>
+                </div>
+              </div>
+              <div class="cta__list__item">
+                <img
+                  src="./assets/images/foods/Jollof Rice.png"
+                  alt="Jollof Rice<"
+                />
+                <div class="cta__list__item__content">
+                  <h4>Jollof Rice</h4>
+                  <span>Protein</span>
+                </div>
+              </div>
+              <div class="cta__list__item">
+                <img
+                  src="./assets/images/foods/Gastonton.png"
+                  alt="Gastonton<"
+                />
+                <div class="cta__list__item__content">
+                  <h4>Gastonton</h4>
+                  <span>Carbohydrate</span>
+                </div>
+              </div>
+              <div class="cta__list__item">
+                <img
+                  src="./assets/images/foods/Port Domenic.png"
+                  alt="Port Domenic<"
+                />
+                <div class="cta__list__item__content">
+                  <h4>Port Domenic</h4>
+                  <span>Carbohydrate</span>
+                </div>
+              </div>
+              <div class="cta__list__item">
+                <img
+                  src="./assets/images/foods/Carleeville.png"
+                  alt="Carleeville<"
+                />
+                <div class="cta__list__item__content">
+                  <h4>Carleeville</h4>
+                  <span>Fat & Oils</span>
+                </div>
+              </div>
+              <div class="cta__list__item">
+                <img
+                  src="./assets/images/foods/South Chesleyton.png"
+                  alt="South Chesleyton<"
+                />
+                <div class="cta__list__item__content">
+                  <h4>South Chesleyton</h4>
+                  <span>Vegetable</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="cta--double">
             <h3 class="cta--double__title">Getting Started</h3>
@@ -139,22 +208,22 @@
 
       <footer class="bottom-nav">
         <div class="bottom-nav__container">
-          <div class="bottom-nav__item">
+          <button class="bottom-nav__item">
             <img src="./assets/images/menu-icons/calendar.png" alt="" />
             <p>Schedule</p>
-          </div>
-          <div class="bottom-nav__item">
+          </button>
+          <button class="bottom-nav__item">
             <img src="./assets/images/menu-icons/history.png" alt="" />
             <p>History</p>
-          </div>
-          <div class="bottom-nav__item">
+          </button>
+          <button class="bottom-nav__item">
             <img src="./assets/images/menu-icons/notifications.png" alt="" />
             <p>Notifications</p>
-          </div>
-          <div class="bottom-nav__item">
+          </button>
+          <button class="bottom-nav__item">
             <img src="./assets/images/menu-icons/message.png" alt="" />
             <p>Chat</p>
-          </div>
+          </button>
         </div>
       </footer>
     </div>

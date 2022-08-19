@@ -9,6 +9,7 @@
   right: 0;
   max-width: 390px;
   margin: 0 auto;
+  z-index: 3;
 }
 
 .bottom-nav__container {
@@ -23,6 +24,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: none;
+  background-color: transparent;
 }
 
 .bottom-nav__item img {
