@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-  font-family: 'Cerebri Sans', sans-serif;
+  --color-background: #f9fffb;
+  --color-background-dark: #56625a;
+  --color-black: #121212;
+
+  font-family: "Cerebri Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--color-black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -40,7 +44,7 @@ h6 {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #000;
+    color: var(--color-black);
     background-color: #ffffff;
   }
 }

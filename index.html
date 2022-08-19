@@ -7,16 +7,156 @@
     <title>One Mobile</title>
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/bottom-nav.css" />
   </head>
   <body>
-    <div>
-      <h1>Hello from browser!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-        doloremque ut inventore. Sequi, voluptate nemo aut accusamus eligendi
-        sit repudiandae non! Ex delectus corrupti nobis! Enim dicta at porro
-        voluptates.
-      </p>
+    <div class="mobile-container">
+      <div class="header">
+        <div class="header__image">
+          <img src="/assets/images/silm-user.png" alt="silm" />
+        </div>
+        <div class="header__message">
+          <h2>Good Morning Silm!</h2>
+        </div>
+      </div>
+      <main class="main">
+        <section class="main__header">
+          <h1 class="main__h__title">Schedule</h1>
+          <div class="main__h__action">
+            <button class="main__h__btn">Reconfigure Services</button>
+          </div>
+        </section>
+        <section class="cta-list">
+          <div class="cta cta--green">
+            <div class="cta__content">
+              <p>Your account is inactive</p>
+              <p><b>15% off </b>offer until June23.</p>
+            </div>
+            <button class="cta__action">
+              <span>
+                <del>N75,000</del>
+              </span>
+              <span>Pay N62,800</span>
+            </button>
+          </div>
+          <div class="cta cta--orange">
+            <div class="cta__content">
+              <p>View your meals for the week</p>
+            </div>
+            <button class="cta__action">
+              <span>Check 'em</span>
+            </button>
+          </div>
+          <div class="cta--double">
+            <h3 class="cta--double__title">Getting Started</h3>
+            <p class="cta--double__sub">
+              Let’s answer any questions you have left!
+            </p>
+            <div class="cta--double__actions">
+              <div class="cta__single">
+                <img
+                  class="cta__single__img"
+                  src="./assets/images/call.png"
+                  alt=""
+                />
+                <p class="cta__single__text">
+                  Set up a call with your gardener
+                </p>
+                <button class="cta__single__action">
+                  <span>Do It</span>
+                  <img src="./assets/images/arrow-p.png" alt="" />
+                </button>
+              </div>
+              <div class="cta__single">
+                <img
+                  class="cta__single__img"
+                  src="./assets/images/play.png"
+                  alt=""
+                />
+                <p class="cta__single__text">Lose yourself to this video</p>
+                <button class="cta__single__action cta__single__action--orange">
+                  <span>Play</span>
+                  <img src="./assets/images/arrow-o.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="events">
+          <div class="event-group">
+            <h3 class="event-group__title">Tomorrow</h3>
+            <div class="event-group__event">
+              <div class="event-group__event-time">9 - 10am</div>
+              <div
+                class="event-group__event-details event-group__event-details--blue"
+              >
+                Your cleaner is coming in to give your apartment the looks.
+              </div>
+            </div>
+          </div>
+          <div class="event-group">
+            <h3 class="event-group__title">Friday, July 27</h3>
+            <div class="event-group__event">
+              <div class="event-group__event-time">3 - 5pm</div>
+              <div
+                class="event-group__event-details event-group__event-details--purple"
+              >
+                Your cleaner is coming in to give your apartment the looks.
+              </div>
+            </div>
+            <div class="event-group__event">
+              <div class="event-group__event-time">3 - 5pm</div>
+              <div
+                class="event-group__event-details event-group__event-details--blue"
+              >
+                Your cleaner is coming in to give your apartment the looks.
+              </div>
+            </div>
+          </div>
+          <div class="event-group">
+            <h3 class="event-group__title">Friday, July 27</h3>
+            <div class="event-group__event">
+              <div class="event-group__event-time">3 - 5pm</div>
+              <div
+                class="event-group__event-details event-group__event-details--purple"
+              >
+                Your cleaner is coming in to give your apartment the looks.
+              </div>
+            </div>
+            <div class="event-group__event">
+              <div class="event-group__event-time">3 - 5pm</div>
+              <div
+                class="event-group__event-details event-group__event-details--blue"
+              >
+                Your cleaner is coming in to give your apartment the looks.
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bottom-nav">
+        <div class="bottom-nav__container">
+          <div class="bottom-nav__item">
+            <img src="./assets/images/menu-icons/calendar.png" alt="" />
+            <p>Schedule</p>
+          </div>
+          <div class="bottom-nav__item">
+            <img src="./assets/images/menu-icons/history.png" alt="" />
+            <p>History</p>
+          </div>
+          <div class="bottom-nav__item">
+            <img src="./assets/images/menu-icons/notifications.png" alt="" />
+            <p>Notifications</p>
+          </div>
+          <div class="bottom-nav__item">
+            <img src="./assets/images/menu-icons/message.png" alt="" />
+            <p>Chat</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

@@ -1,0 +1,38 @@
+.bottom-nav {
+  min-height: 74px;
+  height: 74px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(244, 244, 244, 0.75);
+  left: 0;
+  right: 0;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.bottom-nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 20px 30px;
+}
+
+.bottom-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bottom-nav__item img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+}
+
+.bottom-nav__item p {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 300;
+}

@@ -7,13 +7,6 @@
 
 @font-face {
   font-family: "Cerebri Sans";
-  src: url("../assets/fonts/cerebri-sans/Cerebri\ Sans\ Book\ Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Cerebri Sans";
   src: url("../assets/fonts/cerebri-sans/Cerebri\ Sans\ Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -21,7 +14,14 @@
 
 @font-face {
   font-family: "Cerebri Sans";
-  src: url("../assets/fonts/cerebri-sans/Cerebri\ Sans\ Bold\ Italic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
+  src: url("../assets/fonts/cerebri-sans/Cerebri\ Sans\ SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cerebri Sans";
+  src: url("../assets/fonts/cerebri-sans/CerebriSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
